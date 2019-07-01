@@ -1,2 +1,6 @@
+https://github.com/bradtraversy/simple_react_pagination
+https://jsonplaceholder.typicode.com/
+https://jsonplaceholder.typicode.com/posts
+
 C:\react>create-react-app simple_react_pagination
 
