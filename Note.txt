@@ -1,0 +1,2 @@
+C:\react>create-react-app simple_react_pagination
+
