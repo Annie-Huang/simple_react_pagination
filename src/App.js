@@ -30,13 +30,20 @@ function App() {
     const indexOfFirstPost = indexOfLastPost - postsPerPage;
     const currentPosts = posts.slice(indexOfFirstPost, indexOfLastPost);
 
+    // Change page:
+    const paginate = (pageNumber) => setCurrentPage(pageNumber);
+
     // totalPosts is a number, not the list of all posts.
     return (
         <div className="container mt-5">
             <h1 className="text-primary mb-3">My Blog</h1>
             {/*<Posts posts={posts} loading={loading} />*/}
             <Posts posts={currentPosts} loading={loading} />
-            <Pagination postsPerPage={postsPerPage} totalPosts={posts.length} />
+            <Pagination
+                postsPerPage={postsPerPage}
+                totalPosts={posts.length}
+                paginate={paginate}
+            />
         </div>
     );
 }
