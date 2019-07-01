@@ -8,7 +8,7 @@ function App() {
     const [posts, setPosts] = useState([]);
     const [loading, setLoading] = useState(false);
     const [currentPage, setCurrentPage] = useState(1);
-    const [postsPerPage, setPostsPerPage] = useState(10);
+    const [postsPerPage] = useState(10);
 
     // run componenet is mounted or updated.
     // add [] so it only run only. So it's sort of mimic componentDidMount life cycle.
